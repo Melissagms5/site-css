@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Completo de Página HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Mundo de Gossip Girl!</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#formulario">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre">
+        <h2>Nesta Página</h2>
+        <p>
+            Bem-vindo à página inspirada no universo de Gossip Girl. Uma celebração das fofocas, elegância e sofisticação da alta sociedade de Manhattan. Explore o glamour, a moda e os segredos que fazem essa cidade vibrar. Prepare-se para ser deslumbrado!
+        </p>
+    </section>
+
+    <!-- Seção "Galeria" -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Imagens</h2>
+        <figure>
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/e4ae9594416f97903ee30886ee4a7ff2d93549606ef818e81ce102f24598777f._SX1080_FMjpg_.jpg" alt="Gossip Girl" width="900">
+            <a href="https://xox0gossipgirlrp.tumblr.com/gossipgirl" target="_blank">Clique aqui para visitar o portal</a>
+        </figure>
+    </section>
+
+    <!-- Seção "Tabela" -->
+    <section id="tabela">
+        <h2>Estilos da Alta Sociedade</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estilo</th>
+                    <th>Descrição</th>
+                    <th>Popularidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chique</td>
+                    <td>Elegância e sofisticação</td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <td>Descontraído</td>
+                    <td>Casual, mas com estilo</td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <td>Fashionista</td>
+                    <td>Sempre na vanguarda da moda</td>
+                    <td>Alta</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="formulario">
+        <h2>Entre em Contato</h2>
+        <form action="processar.php" method="post">
+            <!-- Nome completo -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+            
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <!-- Data de nascimento -->
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+            <br><br>
+            
+            <!-- Senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <br><br>
+            
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <br><br>
+            
+            <!-- País -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="brasil">Brasil</option>
+                <option value="portugal">Portugal</option>
+                <option value="eua">EUA</option>
+            </select>
+            <br><br>
+            
+            <!-- Gênero -->
+            <label>Gênero:</label>
+            <input type="radio" name="genero" value="masculino" required> Masculino
+            <input type="radio" name="genero" value="feminino" required> Feminino
+            <input type="radio" name="genero" value="outro" required> Outro
+            <br><br>
+            
+            <!-- Termos -->
+            <input type="checkbox" name="termos" required> Aceito os termos
+            <br><br>
+            
+            <!-- Comentários -->
+            <label for="comentarios">Comentários:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+            <br><br>
+            
+            <!-- Botões -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>2024 Gossip Girl - Todos os direitos reservados</p>
+        <a href="#topo">Voltar ao topo</a>
+    </footer>
+
+</body>
+</html>
